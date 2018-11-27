@@ -35,6 +35,11 @@ body {
   max-width: 100%;
 }
 
+#btn-github {
+  position: absolute;
+  right: 8px;
+}
+
 p {
   @media #{$landscape} { font-size: 1.05em; }
   @media #{$portrait} { font-size: .95em; }
