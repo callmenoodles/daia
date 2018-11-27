@@ -16,6 +16,6 @@ function randomInt(min, max) {
 // Upload every day between 11:00-11:59 AM and 11:00-11:59 PM
 for (var i = 0;i < accounts.length;i++) {
   cron.schedule(randomInt(1, 59).toString() + ' */11 * * *', () => {
-    app.run(accounts[i]);
+    //app.run(accounts[i]);
   });
 }
