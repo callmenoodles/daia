@@ -35,11 +35,6 @@ body {
   max-width: 100%;
 }
 
-#btn-github {
-  position: absolute;
-  right: 8px;
-}
-
 p {
   @media #{$landscape} { font-size: 1.05em; }
   @media #{$portrait} { font-size: .95em; }
@@ -77,6 +72,7 @@ ul {
 }
 
 footer {
+  width: 100%;
   position: absolute;
   bottom: 1%;
   left: 50%;
@@ -87,6 +83,7 @@ footer {
 .footer-text {
   font-family: Bebas Neue;
   font-size: 1.4em;
+  text-align: center;
   color: $color-secondary;
 }
 

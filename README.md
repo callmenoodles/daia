@@ -35,7 +35,7 @@ UNSPLASH_CALLBACK_URL = your_callback_url
 }
 ```
 `searchLimit` is the limit of searches in a search result.
-**Make sure this is smaller than the total amount of searches in a result**
+**Make sure this is smaller than the total amount of searches in a result.**
 You can check this by searching your keywords on Unsplash's website.
 
 ## Usage

@@ -4,9 +4,9 @@ const expApp = express();
 const cron = require('node-cron');
 const accounts = require('./accounts');
 
-
+expApp.set('port', process.env.PORT || 8080);
 expApp.use(express.static('webpage'));
-expApp.listen(3000, function () {});
+expApp.listen(expApp.get('port'));
 
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;

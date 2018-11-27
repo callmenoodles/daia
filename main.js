@@ -10,7 +10,6 @@ const download = require('images-downloader').images;
 const jimp = require('jimp');
 const imageSize = require('image-size');
 
-
 module.exports.run = function run(account) {
   const device = new Client.Device(account.username);
   const storage = new Client.CookieFileStorage(__dirname + '/cookies/' + account.username + '.json');
