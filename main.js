@@ -37,7 +37,7 @@ module.exports.run = function run(account) {
     .then(json => {
       imageURL = json['results'][0]['urls']['full'];
       instagram = json['results'][0]['user']['instagram_username'];
-      instagram = (instagram == null ? '' : '@' + instagram);
+      instagram = (instagram == null ? '' : '@' + instagram.replace(/\s/g, '') + ' ');
 
       photographer = json['results'][0]['user']['name'];
       var tagsArr = json['results'][0]['tags'];
@@ -50,7 +50,7 @@ module.exports.run = function run(account) {
       tags.slice(0, -1); // Remove final space
 
       // TODO: Space issue before 'on'
-      caption = 'Photo taken by ' + photographer + ' ' + instagram.replace(/\s/g, '').concat(' ') + 'on Unsplash\n\n' + popularTags + ' ' + tags;
+      caption = 'Photo taken by ' + photographer + ' ' + instagram + 'on Unsplash\n\n' + popularTags + ' ' + tags;
     }).then(() => {
       download([imageURL], __dirname)
         .then(res => {
