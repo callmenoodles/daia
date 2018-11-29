@@ -12,7 +12,7 @@ var randInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 // *minute, *hour, *day of month, *month, *day of week
 for (var i = 0;i < accounts.length;i++) {
-  cron.schedule(`${randInt(1, 59)} ${randInt(1, 12)},${randInt(13, 23)} * * *`, () => {
+  cron.schedule(`${randInt(0, 59)} ${randInt(0, 12)},${randInt(13, 23)} * * *`, () => {
     app.run(accounts[i]);
   });
 }
