@@ -38,6 +38,8 @@ UNSPLASH_CALLBACK_URL = your_callback_url
 **Make sure this is smaller than the total amount of searches in a result.**
 You can check this by searching your keywords on Unsplash's website.
 
+5. Lastly, create a directory called `cookies` in the root directory. Inside this folder, create an empty file called `yourusername.json`. This should be the same name as in your `accounts.js` file. If you use multiple accounts, just add multiple files.
+
 ## Usage
 
 The program will work after you enter `node app` in the command line. However, when you now exit the program by hitting `Ctrl+C`, by exiting the command line or closing it any other way, it will not run periodically anymore.
