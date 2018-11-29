@@ -8,14 +8,11 @@ expApp.set('port', process.env.PORT || 8080);
 expApp.use(express.static('webpage'));
 expApp.listen(expApp.get('port'));
 
-function randomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+var randInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 // *minute, *hour, *day of month, *month, *day of week
-// Upload every day between 11:00-11:59 AM and 11:00-11:59 PM
 for (var i = 0;i < accounts.length;i++) {
-  cron.schedule(randomInt(1, 59).toString() + ' */11 * * *', () => {
+  cron.schedule(`${randInt(1, 59)} ${randInt(1, 12)},${randInt(13, 23)} * * *`, () => {
     app.run(accounts[i]);
   });
 }
