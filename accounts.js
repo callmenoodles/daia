@@ -21,7 +21,7 @@ var accounts = [
     username: 'daia.models',
     password: process.env.PASS_DAIAMODELS,
     category: 'female',
-    popularTags: '#model #fashion #photoshoot #modeling',
+    popularTags: '#model #female #girl',
     searchLimit: 10000
   }
 ];
