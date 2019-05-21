@@ -1,0 +1,38 @@
+{
+  "name": "daia",
+  "version": "1.0.0",
+  "description": "Daily-Automated Instagram Account is a program that automatically updates ones chosen Instagram account(s) with new posts periodically based on category",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "growl": "^1.10.5",
+    "image-size": "^0.7.4",
+    "images-downloader": "^1.0.3",
+    "instagram-private-api": "^1.8.0",
+    "jimp": "^0.6.4",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "unsplash-js": "^5.0.0",
+    "url-parse": "^1.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-lushiku/Daia.git"
+  },
+  "keywords": [
+    "Instagram",
+    "Automation",
+    "Social"
+  ],
+  "author": "Alex Lushiku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alex-lushiku/Daia/issues"
+  },
+  "homepage": "https://github.com/alex-lushiku/Daia#readme"
+}
