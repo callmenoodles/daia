@@ -13,7 +13,7 @@
     "instagram-private-api": "^1.14.0",
     "jimp": "^0.6.4",
     "node-cron": "^2.0.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "unsplash-js": "^5.0.0",
     "url-parse": "^1.4.7"
   },
