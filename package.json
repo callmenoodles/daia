@@ -15,7 +15,7 @@
     "node-cron": "^2.0.3",
     "node-fetch": "^2.6.0",
     "unsplash-js": "^5.0.0",
-    "url-parse": "^1.4.7"
+    "url-parse": "^1.5.0"
   },
   "devDependencies": {
     "mocha": "^6.1.4"
